@@ -10,7 +10,7 @@ int main() {
 
     int n = 4;
     int num[4] = {2,4,2,4};
-
+ 
     for (int i = 0; i < n; i++)
     {
        // myMap.insert(make_pair(num[i],i));
