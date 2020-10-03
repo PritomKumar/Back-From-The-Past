@@ -15,5 +15,6 @@ int main() {
     } 
     
     cout << tentousand <<endl;
+    cout << tentousand[n-1] <<endl;
     return 0;
 }
