@@ -8,10 +8,10 @@ int main()
     int n, k;
     cin >> n >> k;
 
-    if(n== 1000 && k==0){
-        cout << "YES" << endl;
-        return 0;
-    }
+    // if(n== 1000 && k==0){
+    //     cout << "YES" << endl;
+    //     return 0;
+    // }
 
     vector<int> primes;
 
@@ -56,7 +56,7 @@ int main()
     }
 
     //cout << nonBach << endl;
-    nonBach == k ? cout << "YES" << endl : cout << "NO" << endl;
+    nonBach >= k ? cout << "YES" << endl : cout << "NO" << endl;
 
     return 0;
 }
