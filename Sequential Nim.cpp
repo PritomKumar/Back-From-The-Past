@@ -4,14 +4,14 @@ using namespace std;
 
 int main() {
     int t;
-    cin>>t;
+    scanf("%d",&t);
     while(t--){
         int n;
-        cin>>n;
+        scanf("%d",&n);
         int arr[n];
         for (int i = 0; i < n; i++)
         {
-            cin>>arr[i];
+            scanf("%d",&arr[i]);
         }
 
         bool first = true;
@@ -19,7 +19,7 @@ int main() {
         for (int i = 0; i < n; i++)
         {
             if(arr[i]>1){
-                first ? cout << "First" <<endl: cout << "Second" <<endl;
+                first ? printf("First\n") : printf("Second\n");
                 unBreak = true;
                 break;
             }
@@ -28,7 +28,7 @@ int main() {
             }
         }
         if(!unBreak){
-            !first ? cout << "First" <<endl: cout << "Second" <<endl;
+            !first ? printf("First\n") : printf("Second\n");
         }
         
     }
