@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
     
-
     int n;
     cin>>n;
 
@@ -17,9 +16,6 @@ int main() {
     {
         int paper;
         cin >> papers[i];
-       
-        
-
     }
 
     for (int i = 0; i < n-1; i++)
@@ -42,7 +38,6 @@ int main() {
         cout << result[i] << " ";
     }
     cout << n-position <<endl; 
-    
     
     return 0;
 }
