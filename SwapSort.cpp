@@ -15,32 +15,29 @@ bool sameArray(int arr[], int arr2[], int n)
     return true;
 }
 
-int findIndex(int arr[], int n, int number, int arr2[], int number2)
+int findIndex(int arr[], int n, int number, int arr2[], int number2,int index)
 {
 
     int x, y;
-    for (int j = 0; j < n; j++)
-    {
-        
-        for (int i = 0; i < n; i++)
-        {
-            if (arr[i] == number)
-            {
-                x=i;
-            }
-        }
 
-        for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == number)
         {
-            if (arr2[i] == number2)
-            {
-                y=i;
-            }
-        }
-        if(x==y){
-            return x;
+           
+                return i;
+            
         }
     }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (arr2[i] == number2 && x == i)
+    //     {
+    //         return i;
+    //     }
+    // }
+
     return -1;
 }
 
@@ -67,7 +64,7 @@ int main()
         {
             if (num[i] != num2[i])
             {
-                int index = findIndex(num2, n, num[i], num, num2[i]);
+                int index = findIndex(num2, n, num[i], num, num2[i],index);
                 int temp = num2[i];
                 num2[i] = num2[index];
                 num2[index] = temp;
